@@ -6,9 +6,8 @@ const ProductHeader = props => {
     return(
       <header>
         <h2 className={styles.name}>{props.title}</h2>
-        <span className={styles.price}>Price: {props.makePrice} </span>
+        <span className={styles.price}>Price: {props.totalCost} </span>
       </header>
     ); 
 }
-
 export default ProductHeader;
