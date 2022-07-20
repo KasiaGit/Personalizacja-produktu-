@@ -1,8 +1,10 @@
 import styles from './Product.module.scss';
-import { useState } from 'react';
+import { useState, useMemo} from 'react';
+import PropTypes from 'prop-types';
 import ProductImage from './ProductImage/ProductImage';
 import ProductHeader from './ProductHeader/ProductHeader';
 import ProductForm from './ProductForm/ProductForm';
+
 
 
 const Product = props => {

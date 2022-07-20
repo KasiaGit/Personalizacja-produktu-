@@ -5,10 +5,10 @@ import styles from './ProductForm.module.scss';
 
 const ProductForm = props => {
     return(
-        <form>
+      <form onSubmit={props.handleCart}>
           <OptionSize sizeArr={props.sizeArr} handleActiveSize={props.handleActiveSize} activeSize={props.activeSize}/>
           <OptionColor colors={props.colors} handleActiveColor={props.handleActiveColor} activeColor={props.activeColor}/>
-          <Button className={styles.button} handleCart={props.handleCart}>
+          <Button className={styles.button}>
             <span className="fa fa-shopping-cart"/>
           </Button>
         </form>
